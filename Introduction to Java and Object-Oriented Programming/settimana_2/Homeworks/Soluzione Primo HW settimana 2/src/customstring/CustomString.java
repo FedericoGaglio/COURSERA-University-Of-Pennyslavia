@@ -202,31 +202,4 @@ public class CustomString {
 			return "";
 		}
 	}
-	
-	
-	public static void main(String[] args) {
-		
-		//RISULTATO ATTESO: "my lucky numbe s   e 6, 8,  nd 19."
-		System.out.println("TEST METODO 1");
-		CustomString cs = new CustomString();
-		cs.setString("my lucky numbers are 6, 8, and 19.");
-		String removers="ra6";
-		System.out.println(cs.remove(removers));
-		System.out.println("----------------------------------");
-
-		//RISULTATO ATTESO: "aBC, xyz; 123."
-		System.out.println("TEST METODO 2");
-		CustomString cs2 = new CustomString();
-		cs2.setString("abc, XYZ; 123.");
-		String removers2="bcdxyz@3210.";
-		System.out.println(cs2.reverse(removers2));
-		System.out.println("----------------------------------");
-		
-		System.out.println("TEST METODO 3");
-		CustomString cs3 = new CustomString();
-		cs3.setString("Hello 90, bye 2");
-		System.out.println(cs3.filterLetters('h', false));
-		System.out.println("----------------------------------");
-
-	}
 }
